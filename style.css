@@ -1,0 +1,240 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	background: rgb(10 10 10);
+	color: rgb(255 255 255);
+	color-scheme: dark;
+	font-size: 14px;
+	line-height: 1.25rem;
+}
+
+body {
+	font-family: 'JetBrains Mono NL', 'JetBrains Mono', monospace;
+	font-variant-ligatures: none;
+	font-feature-settings: 'liga' 0;
+	max-width: 680px;
+	margin: 0 auto;
+	padding: 16px;
+}
+
+button,
+input,
+select,
+textarea,
+optgroup,
+*::placeholder {
+	font: inherit;
+	text-transform: none;
+}
+
+code,
+pre,
+kbd,
+samp {
+	font: inherit;
+}
+
+summary {
+	display: list-item;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-block-start: 1.1rem;
+	margin-block-end: 1.1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: bold;
+}
+
+h1::before {
+	content: '# ';
+	content: '# ' / '';
+}
+
+h2::before {
+	content: '## ';
+	content: '## ' / '';
+}
+
+h3::before {
+	content: '### ';
+	content: '### ' / '';
+}
+
+h4::before {
+	content: '#### ';
+	content: '#### ' / '';
+}
+
+h5::before {
+	content: '##### ';
+	content: '##### ' / '';
+}
+
+h6::before {
+	content: '###### ';
+	content: '###### ' / '';
+}
+
+hr {
+	color: rgb(163 163 163);
+	border: 0;
+	margin: 1.15rem 0;
+}
+
+hr::before {
+	content: '---';
+	content: '---' / '';
+}
+
+ul {
+	list-style-type: '- ';
+	padding-inline-start: 2ch;
+}
+
+ol {
+	padding-inline-start: 3ch;
+}
+
+li[role=article]+li[role=article] {
+	margin-top: 1.1rem;
+}
+
+li header {
+	margin: 0;
+}
+
+li h1::before,
+li h2::before,
+li h3::before,
+li h4::before,
+li h5::before,
+li h6::before {
+	content: unset;
+}
+
+blockquote {
+	color: Mark;
+	position: relative;
+	margin-block-start: 1.1rem;
+	margin-block-end: 1.1rem;
+	margin-inline-start: 2ch;
+}
+
+blockquote::before {
+	content: '>';
+	content: '>' / '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: -2ch;
+}
+
+header {
+	margin-block-start: 1.1rem;
+	margin-block-end: 1.1rem;
+}
+
+header h1,
+header h2,
+header h3,
+header h4,
+header h5,
+header h6,
+header p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+small {
+	font-size: inherit;
+	color: rgb(163 163 163);
+}
+
+code {
+	color: #006161;
+}
+
+code::before,
+code::after {
+	content: '`';
+	content: '`' / '';
+}
+
+pre {
+	margin: 2ch 0;
+}
+
+pre code {
+	color: currentColor;
+	display: block;
+	overflow-x: auto;
+}
+
+pre code::before,
+pre code::after {
+	content: unset;
+}
+
+pre::before,
+pre::after {
+	content: '```';
+	content: '```' / '';
+	display: block;
+	color: #555;
+}
+
+nav {
+	display: flex;
+	gap: 2ch;
+	margin-block-end: 1.1rem;
+}
+
+nav span::before,
+nav span::after {
+	color: rgb(163 163 163);
+}
+
+nav span::before {
+	content: '[';
+	content: '[' / '';
+}
+
+nav span::after {
+	content: ']';
+	content: ']' / '';
+}
+
+main {
+	margin-block-start: 1.1rem;
+}
