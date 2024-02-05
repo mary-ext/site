@@ -6,11 +6,10 @@
 
 :root {
 	--background-primary: #0a0a0a;
-	--text-primary: #f5f5f5;
-	--text-secondary: #a3a3a3;
-	--text-tertiary: #737373;
+	--text-primary: #e5e5e5;
+	--text-secondary: #737373;
 	--text-accent: #60a5fa;
-	--text-quote: #86efac;
+	--text-quote: #bbf7d0;
 }
 
 html {
@@ -63,8 +62,8 @@ h4,
 h5,
 h6,
 p {
-	margin-block-start: 1.1rem;
-	margin-block-end: 1.1rem;
+	margin-block-start: 1.25rem;
+	margin-block-end: 1.25rem;
 }
 
 h1,
@@ -108,10 +107,10 @@ h6::before {
 }
 
 hr {
-	color: var(--text-tertiary);
+	color: var(--text-secondary);
 	text-align: center;
 	border: 0;
-	margin: 1.15rem 0;
+	margin: 1.25rem 0;
 }
 
 hr::before {
@@ -194,35 +193,11 @@ small {
 
 code {
 	color: var(--text-quote);
-}
-
-code::before,
-code::after {
-	content: '`';
-	content: '`' / '';
+	overflow-wrap: break-word;
 }
 
 pre {
 	margin: 2ch 0;
-}
-
-pre code {
-	color: currentColor;
-	display: block;
-	overflow-x: auto;
-}
-
-pre code::before,
-pre code::after {
-	content: unset;
-}
-
-pre::before,
-pre::after {
-	content: '```';
-	content: '```' / '';
-	display: block;
-	color: var(--text-tertiary);
 }
 
 nav {
@@ -233,7 +208,7 @@ nav {
 
 nav span::before,
 nav span::after {
-	color: var(--text-tertiary);
+	color: var(--text-secondary);
 }
 
 nav span::before {
@@ -248,10 +223,4 @@ nav span::after {
 
 main {
 	margin-block-start: 1.1rem;
-}
-
-.icon {
-	height: 1em;
-	width: 1em;
-	vertical-align: -2px;
 }
