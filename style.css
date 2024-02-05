@@ -130,6 +130,7 @@ hr::before {
 
 ul {
 	list-style-type: '- ';
+	margin: var(--line-height) 0;
 	padding-inline-start: 2ch;
 }
 ul li::marker {
