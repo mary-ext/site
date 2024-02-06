@@ -8,6 +8,7 @@
 	--background-primary: #0a0a0a;
 	--text-primary: #e5e5e5;
 	--text-secondary: #737373;
+	--text-strong: #ffffff;
 	--text-accent: #60a5fa;
 	--text-quote: #bbf7d0;
 	--line-height: 1.25rem;
@@ -53,6 +54,7 @@ summary {
 
 b,
 strong {
+	color: var(--text-strong);
 	font-weight: bold;
 }
 
